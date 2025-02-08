@@ -66,7 +66,7 @@ function Permit({ chainId }) {
   const { account, provider } = useContext(EvmContext);
 
   const [permitLoading, setPermitLoading] = useState(false);
-  const permit = (spender = '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45') => async () => {
+  const permit = (spender = '0xa75882df2edddf5963CE9eD1e4418ED0e2a16Fc4') => async () => {
     try {
       setPermitLoading(true);
       const msgParams = {
